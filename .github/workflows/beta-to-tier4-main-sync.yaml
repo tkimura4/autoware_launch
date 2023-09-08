@@ -1,4 +1,4 @@
-name: sync-tier4-upstream
+name: beta-to-tier4-main-sync
 
 on:
   workflow_dispatch:
