@@ -19,8 +19,8 @@ jobs:
           base-branch: tier4/main
           sync-pr-branch: beta-to-tier4-main-sync
           sync-target-repository: https://github.com/tkimura4/autoware_launch.git
-          sync-target-branch: ${{ inputs.target_branch }}
-          pr-title: "chore: sync beta branch ${{ inputs.target_branch }} with tier4/main"
+          sync-target-branch: ${{ inputs.source_branch }}
+          pr-title: "chore: sync beta branch ${{ inputs.source_branch }} with tier4/main"
           pr-labels: |
             bot
             sync-tier4-upstream
