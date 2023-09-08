@@ -12,13 +12,6 @@ jobs:
   sync-tier4-upstream:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate token
-        id: generate-token
-        uses: tibdex/github-app-token@v1
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
-
       - name: Run sync-branches
         uses: autowarefoundation/autoware-github-actions/sync-branches@v1
         with:
